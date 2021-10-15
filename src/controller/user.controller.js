@@ -3,7 +3,7 @@
 const User = require('../model/user.model');
 
 
-exports.create = function(req, res) {    
+exports.create = function(req, res) {
     const user = new User(req.body);
 
     console.log("user to insert", user)
@@ -32,7 +32,7 @@ exports.findAll = function(req, res) {
     });
 }
 
-exports.delete = function(req, res) {    
+exports.delete = function(req, res) {
     const idUser = req.params.id;
 
     console.log("product to delete", idUser)
@@ -45,3 +45,5 @@ exports.delete = function(req, res) {
         }
     });
 }
+
+// exports.login()
